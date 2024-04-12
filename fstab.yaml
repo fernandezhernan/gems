@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p44752-e196089.adobeaemcloud.com/bin/franklin.delivery/fernandezhernan/gems/main"
+    url: "https://author-p112995-e1115954.adobeaemcloud.com/bin/franklin.delivery/fernandezhernan/gems/main"
     type: "markup"
     suffix: ".html"
