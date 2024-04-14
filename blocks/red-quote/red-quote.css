@@ -1,4 +1,4 @@
-.red-quote.quote {
+.block.red-quote {
     background-color: #9d0808;
     padding: 0 0 24px;
     display: flex;
@@ -6,19 +6,19 @@
     margin: 1rem 0;
 }
 
-.red-quote.quote blockquote {
+.block.red-quote blockquote {
     margin: 16px;
     text-indent: 0;
 }
 
-.red-quote.quote > div:last-child > div {
+.block.red-quote > div:last-child > div {
     margin: 0 16px;
     font-size: small;
     font-style: italic;
     position: relative;
 }
 
-.red-quote.quote > div:last-child > div::after {
+.block.red-quote > div:last-child > div::after {
     content: "";
     display: block;
     position: absolute;
