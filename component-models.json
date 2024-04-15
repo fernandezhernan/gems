@@ -212,6 +212,13 @@
         "component": "text",
         "name": "theme",
         "label": "Theme"
+      },
+      {
+        "component": "reference",
+        "valueType": "string",
+        "name": "pgimage",
+        "label": "OG Image",
+        "multi": false
       }
     ]
   }  
