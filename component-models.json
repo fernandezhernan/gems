@@ -223,20 +223,18 @@
       {
         "component": "text",
         "name": "experiment-variants",
-        "label": "Experiment variants",
-        "multi": true
+        "label": "Experiment variants"
       },
       {
         "component": "text",
         "name": "instant-experiment",
-        "label": "Instant Experiment",
-        "multi": true
+        "label": "Instant Experiment"
       },      
       {
         "component": "text",
         "name": "experiment",
         "label": "Experiment"
-      },     
+      }  
   },
   {
     "id": "listing",
