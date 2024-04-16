@@ -22,7 +22,7 @@ export default async function decorate(block) {
         const ul = document.createElement('ul');
         ul.append(...lis);
         children.push(ul);
-        }
+      }
     }
     block.replaceChildren(...children);
   }
