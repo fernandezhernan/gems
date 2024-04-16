@@ -219,22 +219,7 @@
         "name": "pgimage",
         "label": "OG Image",
         "multi": false
-      },
-      {
-        "component": "text",
-        "name": "experiment-variants",
-        "label": "Experiment variants"
-      },
-      {
-        "component": "text",
-        "name": "instant-experiment",
-        "label": "Instant Experiment"
-      },      
-      {
-        "component": "text",
-        "name": "experiment",
-        "label": "Experiment"
-      }  
+      }
   },
   {
     "id": "listing",
