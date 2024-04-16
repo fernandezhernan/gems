@@ -236,7 +236,17 @@
         "component": "text",
         "name": "experiment",
         "label": "Experiment"
-      }  
+      },
+      {
+        "component": "text",
+        "name": "conversion-element",
+        "label": "Conversion element"
+      },
+      {
+        "component": "text",
+        "name": "conversion-link-labels",
+        "label": "Conversion link labels"
+      }            
     ]  
   },
   {
