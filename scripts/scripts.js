@@ -56,6 +56,11 @@ const pluginContext = {
   toClassName,
 };
 
+const experimentationOptions = {
+  audiences: AUDIENCES,
+  isProd: () => !window.location.hostname.endsWith('.page'),
+};
+
 window.hlx.plugins.add('rum-conversion', {
   url: '/plugins/rum-conversion/src/index.js',
   load: 'lazy',
@@ -154,7 +159,7 @@ async function loadEager(doc) {
     || Object.keys(getAllMetadata('audience')).length) {
     // eslint-disable-next-line import/no-relative-packages
     const { loadEager: runEager } = await import('../plugins/experimentation/src/index.js');
-    await runEager(document, { audiences: AUDIENCES }, pluginContext);
+    await runEager(document, experimentationOptions, pluginContext);
   }
 
   document.documentElement.lang = 'en';
@@ -188,7 +193,7 @@ async function loadLazy(doc) {
     || Object.keys(getAllMetadata('audience')).length)) {
     // eslint-disable-next-line import/no-relative-packages
     const { loadLazy: runLazy } = await import('../plugins/experimentation/src/index.js');
-    await runLazy(document, { audiences: AUDIENCES }, pluginContext);
+    await runLazy(document, experimentationOptions, pluginContext);
   }
 
   const main = doc.querySelector('main');
